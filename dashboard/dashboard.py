@@ -8,10 +8,9 @@ import plotly.express as px
 sns.set(style='dark')
 
 # Load Data
-file_path = "C:/submission/dashboard/all_data.csv"
-try:
-    all_df = pd.read_csv(file_path)
-    
+file_path = "dashboard/all_data.csv"
+bike_df = pd.read_csv(file_path)
+
     # Ubah semua nama kolom menjadi lowercase
     all_df.columns = all_df.columns.str.lower()
     
